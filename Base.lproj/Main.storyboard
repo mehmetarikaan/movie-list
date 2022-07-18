@@ -40,8 +40,11 @@
                                                         <constraint firstAttribute="width" constant="157" id="cve-zh-Whw"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Django" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48L-Rg-4wW">
-                                                    <rect key="frame" x="61.5" y="225" width="54" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Django" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48L-Rg-4wW">
+                                                    <rect key="frame" x="38" y="225" width="111" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="MnW-hv-jkE"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -67,21 +70,20 @@
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="bottomMargin" secondItem="paT-pw-omX" secondAttribute="bottom" constant="5" id="5No-8I-Bxc"/>
-                                            <constraint firstItem="2lZ-bg-gI1" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" constant="47.5" id="IAT-8c-hq6"/>
+                                            <constraint firstItem="2lZ-bg-gI1" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" constant="47.5" id="IAT-8c-hq6" userLabel="Movie Price Label.leading = leadingMargin + 20"/>
                                             <constraint firstItem="2lZ-bg-gI1" firstAttribute="centerX" secondItem="paT-pw-omX" secondAttribute="centerX" id="JuP-u7-2p3"/>
                                             <constraint firstItem="PaE-cL-pmQ" firstAttribute="centerX" secondItem="gnh-5j-2JY" secondAttribute="centerX" id="LVV-jo-JLQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="2lZ-bg-gI1" secondAttribute="bottom" constant="47.5" id="MRl-U9-jyY"/>
-                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="top" secondItem="gnh-5j-2JY" secondAttribute="top" constant="225" id="Nfe-az-xXX"/>
+                                            <constraint firstAttribute="bottom" secondItem="2lZ-bg-gI1" secondAttribute="bottom" constant="47.5" id="MRl-U9-jyY" userLabel="bottom = Movie Price Label.bottom + 20"/>
                                             <constraint firstItem="paT-pw-omX" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" constant="20" id="RFi-XC-XiX"/>
                                             <constraint firstAttribute="bottom" secondItem="48L-Rg-4wW" secondAttribute="bottom" constant="73.5" id="VAQ-W6-URi"/>
-                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" constant="53.5" id="aRj-ys-PcE"/>
+                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="centerX" secondItem="gnh-5j-2JY" secondAttribute="centerX" id="ZXA-fs-opO"/>
                                             <constraint firstItem="paT-pw-omX" firstAttribute="top" secondItem="2lZ-bg-gI1" secondAttribute="bottom" constant="3.5" id="cdo-hA-ORQ"/>
                                             <constraint firstItem="PaE-cL-pmQ" firstAttribute="centerX" secondItem="48L-Rg-4wW" secondAttribute="centerX" id="dIM-9r-W0e"/>
-                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="top" secondItem="PaE-cL-pmQ" secondAttribute="bottom" constant="20" id="fIe-YP-pYk"/>
                                             <constraint firstItem="2lZ-bg-gI1" firstAttribute="top" secondItem="48L-Rg-4wW" secondAttribute="bottom" constant="5" id="ghQ-Lv-DGb"/>
-                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="centerX" secondItem="2lZ-bg-gI1" secondAttribute="centerX" id="j1V-ji-GYp"/>
+                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" constant="53.5" id="lkr-oE-3H2"/>
                                             <constraint firstItem="PaE-cL-pmQ" firstAttribute="top" secondItem="gnh-5j-2JY" secondAttribute="topMargin" constant="-3" id="luI-O7-6qG"/>
-                                            <constraint firstItem="PaE-cL-pmQ" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" constant="2" id="wuu-Xc-QfQ"/>
+                                            <constraint firstItem="PaE-cL-pmQ" firstAttribute="leading" secondItem="gnh-5j-2JY" secondAttribute="leadingMargin" id="wuu-Xc-QfQ"/>
+                                            <constraint firstItem="48L-Rg-4wW" firstAttribute="top" secondItem="PaE-cL-pmQ" secondAttribute="bottom" constant="20" id="zjL-MC-tVe" userLabel="Movie Name Label.top = Movie Image View.bottom + 10"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="MovieNameLabel" destination="48L-Rg-4wW" id="10c-YV-oYh"/>

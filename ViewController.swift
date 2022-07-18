@@ -15,6 +15,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tasarim:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        
+        let genislik = self.movieCollectionView.frame.size.width
+        
+        tasarim.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        
+        tasarim.minimumInteritemSpacing = 10
+        tasarim.minimumLineSpacing = 10
+        
+        let hucreGenislik = (genislik-30)/2
+        
+        tasarim.itemSize = CGSize(width: hucreGenislik, height: hucreGenislik*1.6)
+        
         movieCollectionView.delegate = self
         movieCollectionView.dataSource = self
         
@@ -53,6 +66,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.MovieNameLabel.text = movie.movieTitle!
         cell.moviePriceLabel.text = "\(movie.moviePrice!) TL"
         cell.movieImageView.image = UIImage(named: movie.movieImageName!)
+        
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 0.5
         
         return cell
     }
